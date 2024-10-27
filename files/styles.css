@@ -1029,7 +1029,6 @@ footer{
         display: flex;
     }
     .footer_container{
-        background-color: black;
         margin: 0 20%;
     }
     .footer_above{
