@@ -1,0 +1,57 @@
+<nav>
+    <div class="nav_container">
+        <div class="nav_main">
+            <img src="/assets/logo2.png" alt="COF/FEE Logo" class="nav_logo">
+            <div class="nav_button">
+                <ul>
+                    <li><a href="/index.html" class="nav_link">Home</a></li>
+                    <li><a href="/pages/menu.html" class="nav_link">Menu</a></li>
+                    <li><a href="/pages/about.html" class="nav_link">About Us</a></li>
+                    <li><a href="/pages/contact.html" class="nav_link">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="hamburger" onclick=showSidebar()>
+                <div class="hamburger_line hamburger_top"></div>
+                <div class="hamburger_line hamburger_mid"></div>
+                <div class="hamburger_line hamburger_bot"></div>
+            </div>
+        </div>
+    </div>
+    <div class="sidebar_container">
+        <div class="sidebar_main">
+            <div class="sidebar_logo_close">
+                <img src="/assets/logo1.png" alt="COF/FEE Logo" class="sidebar_logo">
+                <svg xmlns="http://www.w3.org/2000/svg" height="40px" viewBox="0 -960 960 960" width="40px" fill="#000" class="sidebar_x" onclick=hideSidebar()><path d="m251.33-189.59-61.74-61.74L418.26-480 189.59-708.67l61.74-61.74L480-541.74l228.67-228.67 61.74 61.74L541.74-480l228.67 228.67-61.74 61.74L480-418.26 251.33-189.59Z"/></svg>
+            </div>
+            <div class="sidebar_button">
+                <ul>
+                    <li>
+                        <a href="/index.html" class="sidebar_link">
+                            <div class="sidebar_linkdiv">Home</div>
+                            <div class="sidebar_mid"></div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/pages/menu.html" class="sidebar_link">
+                            <div class="sidebar_linkdiv">Menu</div>
+                            <div class="sidebar_mid"></div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/pages/about.html" class="sidebar_link">
+                            <div class="sidebar_linkdiv">About Us</div>
+                            <div class="sidebar_mid"></div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/pages/contact.html" class="sidebar_link">
+                            <div class="sidebar_linkdiv">Contact Us</div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</nav>
+
+<button onclick="topFunction()" class="go_top"><svg xmlns="http://www.w3.org/2000/svg" height="40px" viewBox="0 -960 960 960" width="40px" fill="#e8eaed"class="scroll_top_button"><path d="m286.67-215.1-53.05-53.28L480-514.76l246.38 246.38-53.05 53.28L480-408.34 286.67-215.1Zm0-254.81-53.05-53.04L480-769.57l246.38 246.62-53.05 53.04L480-663.15 286.67-469.91Z"/></svg></button>
