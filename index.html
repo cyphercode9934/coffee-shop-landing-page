@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>COF/FEE</title>
+    <link rel="stylesheet" href="files/styles.css">
+    <script src="files/main.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+    <script src="files/jquery-3.7.1.min.js"></script>
+</head>
+<body>
+    <!--Navigation Bar-->
+    <header>
+        <nav>
+            <div class="nav_container">
+                <div class="nav_main">
+                    <img src="assets/logo2.png" alt="COF/FEE Logo" class="nav_logo">
+                    <div class="nav_button">
+                        <ul>
+                            <li><a href="index.html" class="nav_link">Home</a></li>
+                            <li><a href="pages/menu.html" class="nav_link">Menu</a></li>
+                            <li><a href="pages/about.html" class="nav_link">About Us</a></li>
+                            <li><a href="pages/contact.html" class="nav_link">Contact Us</a></li>
+                        </ul>
+                    </div>
+                    <div class="hamburger" onclick=showSidebar()>
+                        <div class="hamburger_line hamburger_top"></div>
+                        <div class="hamburger_line hamburger_mid"></div>
+                        <div class="hamburger_line hamburger_bot"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="sidebar_container">
+                <div class="sidebar_main">
+                    <div class="sidebar_logo_close">
+                        <img src="assets/logo1.png" alt="COF/FEE Logo" class="sidebar_logo">
+                        <svg xmlns="http://www.w3.org/2000/svg" height="40px" viewBox="0 -960 960 960" width="40px" fill="#000" class="sidebar_x" onclick=hideSidebar()><path d="m251.33-189.59-61.74-61.74L418.26-480 189.59-708.67l61.74-61.74L480-541.74l228.67-228.67 61.74 61.74L541.74-480l228.67 228.67-61.74 61.74L480-418.26 251.33-189.59Z"/></svg>
+                    </div>
+                    <div class="sidebar_button">
+                        <ul>
+                            <li>
+                                <a href="index.html" class="sidebar_link">
+                                    <div class="sidebar_linkdiv">Home</div>
+                                    <div class="sidebar_mid"></div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="pages/menu.html" class="sidebar_link">
+                                    <div class="sidebar_linkdiv">Menu</div>
+                                    <div class="sidebar_mid"></div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="pages/about.html" class="sidebar_link">
+                                    <div class="sidebar_linkdiv">About Us</div>
+                                    <div class="sidebar_mid"></div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="pages/contact.html" class="sidebar_link">
+                                    <div class="sidebar_linkdiv">Contact Us</div>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <button onclick="topFunction()" class="go_top"><svg xmlns="http://www.w3.org/2000/svg" height="40px" viewBox="0 -960 960 960" width="40px" fill="#e8eaed"class="scroll_top_button"><path d="m286.67-215.1-53.05-53.28L480-514.76l246.38 246.38-53.05 53.28L480-408.34 286.67-215.1Zm0-254.81-53.05-53.04L480-769.57l246.38 246.62-53.05 53.04L480-663.15 286.67-469.91Z"/></svg></button>
+    </header>
+
+    <!--Main-->
+    <main>
+        <section class="first">
+            <div class="first_wrapper">
+                <div class="first_content">
+                    <div class="first_text">
+                        <h1 class="first_head">WHERE COMFORT BREWS</h1>
+                        <p class="first_subhead">Your perfect companion in a busy day.</p>
+                        <div>
+                            <a href="pages/menu.html" class="home_btn first_button">EXPLORE MENU</a>
+                        </div>
+                    </div>
+                    <div class="first_img">
+                        <picture>
+                            <img src="assets/coffee-mug.png" alt="Coffee Mug">
+                        </picture>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="second">
+            <div class="second_container">
+                <div class="featured">
+                    <h2 class="ftr_title">FEATURED PROMOTIONS</h2>
+                    <div class="ftr_container">
+                        <article class="ftr">
+                            <div class="ftr_div">
+                                <div class="ftr_content">
+                                    <div class="ftr_text">
+                                        <h3 class="ftr_h">Embrace the flavors of fall!</h3>
+                                        <p class="ftr_p">For a limited time, enjoy our Autumn Spice Latte, a warm blend of espresso, almond milk, and a hint of cinnamon and nutmeg, topped with whipped cream. Pair it with any pastry of your choice!</p>
+                                        <a href="pages/menu.html" class="home_btn second_button">GET YOURS TODAY!</a>
+                                    </div>
+                                </div>
+                                <div class="ftr_pic">
+                                    <img src="assets/autumn-latte.png" alt="Autumn Latte" class="ftr_img">
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+                <div class="best">
+                    <h2 class="bst_title">BEST SELLERS</h2>
+                    <div class="bst_container">
+                        <div class="bst_container1">
+                            <div class="bst">
+                                <div class="bst_content1">
+                                    <img src="assets/sample.jpg" alt="" class="bst_img">
+                                    <h4 class="bst_text">Mocha Coffee</h4>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="bst_container2">
+                            <div class="bst">
+                                <div class="bst_content2">
+                                    <img src="assets/sample.jpg" alt="" class="bst_img">
+                                    <h4 class="bst_text">Mocha Latte</h4>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="bst_container3">
+                            <div class="bst">
+                                <div class="bst_content3">
+                                    <img src="assets/sample.jpg" alt="" class="bst_img">
+                                    <h4 class="bst_text">Mocha Frappe</h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <a href="pages/menu.html" class="home_btn second_button">VIEW FULL MENU</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="third">
+            <h2 class="about_head">WHY COF/FEE?</h2>
+            <div class="third_container">
+                <div class="about_table">
+                    <div class="abt_service">
+                        <img src="assets/quality.png" alt="Star">
+                        <h3>High quality service</h3>
+                    </div>
+                </div>
+                <div class="about_table">
+                    <div class="abt_beans">
+                        <img src="assets/bean.png" alt="Coffee bean">
+                        <h3>Premium coffee beans</h3>
+                    </div>
+                </div>
+                <div class="about_table">
+                    <div class="abt_coffee">
+                        <img src="assets/coffee-cup.png" alt="Coffee cup">
+                        <h3>Rich and flavorful coffee</h3>
+                    </div>
+                </div>
+                <div class="about_table">
+                    <div class="abt_price">
+                        <img src="assets/afford.png" alt="Money over hand">
+                        <h3>Affordable prices</h3>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <a href="pages/about.html" class="home_btn third_button">LEARN MORE</a>
+            </div>
+        </section>
+    </main>
+
+    <!--Footer-->
+    <footer>
+        <div class="footer_container">
+            <div class="footer_main">
+                <div class="footer_above">
+                    <div class="ft_logo">
+                        <img src="assets/logo2.png" alt="Logo" class="footer_logo">
+                        <p class="footer_sub">"Unang higop, babalik ang mga alaala na dapat kalimutan na"</p>
+                    </div>
+                    <div class="footer_content">
+                        <div class="footer_section footer_quicklink">
+                            <p class="footer_titles">QUICKLINKS</p>
+                            <ul>
+                                <li class="footer_lists"><a href="pages/menu.html" class="footer_link">Menu</a></li>
+                                <li class="footer_lists"><a href="pages/about.html" class="footer_link">About Us</a></li>
+                                <li class="footer_lists"><a href="pages/contact.html" class="footer_link">Contact Us</a></li>
+                            </ul>
+                        </div>
+                        <div class="footer_section footer_terms">
+                            <p class="footer_titles">SITE TERMS</p>
+                            <ul>
+                                <li class="footer_lists"><a href="pages/terms.html" class="footer_link">Terms of Use</a></li>
+                                <li class="footer_lists"><a href="pages/privacy.html" class="footer_link">Privacy Policy</a></li>
+                            </ul>
+                        </div>
+                        <div class="footer_section footer_folcon">
+                            <div class="follow">
+                                <p class="footer_titles">FOLLOW US</p>
+                                <ul class="follow_list">
+                                    <li><a href="https://www.facebook.com/" class="follow_link"><img src="assets/FB.png" alt="Facebook" class="footer_social footer_fb"></a></li>
+                                    <li><a href="https://x.com/" class="follow_link"><img src="assets/X.png" alt="X" class="footer_social footer_x"></a></li>
+                                    <li><a href="https://www.instagram.com/" class="follow_link"><img src="assets/IG.png" alt="Instagram" class="footer_social footer_ig"></a></li>
+                                </ul>
+                            </div>
+                            <div class="contact">
+                                <p class="footer_titles">CONTACT US</p>
+                                <ul>
+                                    <li class="footer_lists contact_list">(02) 126-3333</li>
+                                    <li class="footer_lists contact_list"><a href="mailto:fakemail@coffee.ph">fakemail@coffee.ph</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer_below">
+                    <div class="copyright">
+                        <p>&copy;2024 COF/FEE. All rights reserved.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
